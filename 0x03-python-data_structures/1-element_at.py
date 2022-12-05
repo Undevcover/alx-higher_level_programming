@@ -4,3 +4,5 @@ def element_at(my_list, idx):
             return "None"
         elif my_list.index(i) == idx:
             return i
+if __name__ == "__main__":
+    element_at(0, 0)
