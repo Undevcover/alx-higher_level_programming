@@ -4,4 +4,4 @@ for letter in range(122, 96, -1):
     if letter % 2:
         tmp = 32
         order = chr(letter - tmp);
-    print('{}'.format(order), end='')
+    print('{:s}'.format(order), end='')
