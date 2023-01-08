@@ -1,10 +1,15 @@
 #!/usr/bin/python3
-if __name__ == "__main__":
-    from sys import argv
+from sys import argv
+
+
+def inf_add():
     sum = 0
-    if len(argv) is 1:
-        sum = 0
-    else:
-        for i in range(1, len(argv)):
-            sum += int(argv[i])
-    print("{}".format(sum))
+
+    for index, num in enumerate(argv):
+        if (index > 0):
+            sum = sum + int(num)
+    print("{:d}".format(sum))
+
+
+if __name__ == "__main__":
+    inf_add()
