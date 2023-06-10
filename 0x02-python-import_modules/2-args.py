@@ -4,9 +4,10 @@ from sys import argv
 def main():
     length = len(argv)
     punc = ":"
-    if (length <= 1):
-        word = "arguement"
+    if (length == 0):
         punc = "."
+    if (length == 1):
+        word = "arguement"
     else:
         word = "arguments"
     print("{} {}{}".format(length - 1, word, punc))
