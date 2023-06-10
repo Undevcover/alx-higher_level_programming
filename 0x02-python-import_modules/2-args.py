@@ -1,14 +1,19 @@
 #!/usr/bin/python3
-if __name__ == "__main__":
+from sys import argv
 
-    import sys
-
-    counter = len(sys.argv) - 1
-    if counter == 0:
-        print("0 arguments.")
-    elif counter == 1:
-        print("1 argument:")
+def main():
+    length = len(argv)
+    punc = ":"
+    if (length <= 1):
+        word = "arguement"
+        punc = "."
     else:
-        print("{} arguments:".format(counter))
-    for i in range(counter):
-        print("{}: {}".format(i + 1, sys.argv[i + 1]))
+        word = "arguments"
+    print("{} {}{}".format(length - 1, word, punc))
+    for arg in argv:
+        if (argv.index(arg) != 0):
+            print("{}: {}".format(argv.index(arg), arg))
+if __name__ == "__main__":
+    main()
+~
+
