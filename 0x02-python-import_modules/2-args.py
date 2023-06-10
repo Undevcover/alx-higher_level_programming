@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-from sys import argv
-
 def main():
+    from sys import argv
     length = len(argv)
     punc = ":"
     if (length == 1):
