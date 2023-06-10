@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def main():
+if __name__ == "__main__":
     from sys import argv
     length = len(argv)
     punc = ":"
@@ -13,7 +13,3 @@ def main():
     for arg in argv:
         if (argv.index(arg) != 0):
             print("{}: {}".format(argv.index(arg), arg))
-
-
-if __name__ == "__main__":
-    main()
