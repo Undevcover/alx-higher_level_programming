@@ -6,7 +6,7 @@ def main():
     if (length == 1):
         punc = "."
     if (length == 2):
-        word = "arguement"
+        word = "argument"
     else:
         word = "arguments"
     print("{} {}{}".format(length - 1, word, punc))
