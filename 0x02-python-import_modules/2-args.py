@@ -15,5 +15,3 @@ def main():
             print("{}: {}".format(argv.index(arg), arg))
 if __name__ == "__main__":
     main()
-~
-
