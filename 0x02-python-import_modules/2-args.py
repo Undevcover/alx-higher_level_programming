@@ -2,7 +2,7 @@
 from sys import argv
 
 def main():
-    length = len(argv)
+    length = len(argv) - 1
     punc = ":"
     if (length == 0):
         punc = "."
@@ -10,7 +10,7 @@ def main():
         word = "arguement"
     else:
         word = "arguments"
-    print("{} {}{}".format(length - 1, word, punc))
+    print("{} {}{}".format(length, word, punc))
     for arg in argv:
         if (argv.index(arg) != 0):
             print("{}: {}".format(argv.index(arg), arg))
