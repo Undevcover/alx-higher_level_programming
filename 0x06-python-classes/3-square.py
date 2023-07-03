@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" class Square that defines a square with a 
+"""class Square that defines a square with a
     private instace attribute __size
     and a public instance method area
 """
@@ -7,12 +7,11 @@
 
 class Square:
     """definitiion of a square"""
-
     def __init__(self, size=0):
-         """initializes a new square.
+        """initializes a new square.
             Args:
                 size (int): size of the new square
-            """
+        """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if size < 0:
